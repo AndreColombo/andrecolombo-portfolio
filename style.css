@@ -1,0 +1,479 @@
+/* ========== Estilos de Elementos ========== */
+/* ----- Corpo ----- */
+body {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vw 12%;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2vw;
+}
+
+nav ul li a {
+  font-size: 0.79vw;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #123458;
+  transition: 0.3s;
+}
+
+footer {
+  padding: 2.25vw 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  color: black;
+}
+
+footer hr {
+  width: 50%;
+  margin: 25px 0;
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.25vw;
+}
+
+footer nav ul li a {
+  font-size: 0.89vw;
+  text-decoration: none;
+  color: black;
+}
+
+footer nav ul li a:hover {
+  text-decoration: none;
+  color: #123458;
+  transition: 0.3s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.89vw;
+  min-height: 2.89vw;
+  font-weight: bolder;
+  color: black;
+}
+
+h3 {
+  font-size: 1.31vw;
+  font-weight: bold;
+  margin-bottom: 2.5vw;
+}
+
+h3 span {
+  padding: 0.4% 0.5%;
+  border-radius: 10%;
+  margin-right: 1%;
+  background-color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h4 {
+  font-size: 0.89vw;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  font-size: 0.89vw;
+  line-height: 1.2;
+}
+
+hr {
+  border: 1px solid #123458;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  height: 1.9vw;
+  border: none;
+  border-radius: 0.3vw;
+  font-size: 0.79vw;
+  padding-left: 1.4%;
+}
+
+input:focus {
+  outline: 0.15vw solid #123458;
+}
+
+button {
+  width: 100%;
+  height: 1.9vw;
+  border: none;
+  border-radius: 0.3vw;
+  font-size: 0.79vw;
+  background-color: #123458;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #0a213a;
+}
+
+/* ========== Estilos de Classe ========== */
+/* ----- Estilos do Cabeçalho ----- */
+.name {
+  font-size: 1.42vw;
+}
+.name span {
+  font-weight: bold;
+}
+
+/* ----- Estilos de Botão ----- */
+.links {
+  display: flex;
+  padding-left: 1.3%;
+  gap: 1.7%;
+  font-size: 0.92vw;
+}
+
+.links a {
+  padding: 0.5vw 1vw;
+  color: #f1efec;
+  border-radius: 0.3vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  background-color: #123458;
+}
+
+.links img {
+  width: 1.25vw;
+  aspect-ratio: 1;
+}
+
+/* ----- Estilos do Conteúdo ----- */
+.presentation {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  align-items: center;
+}
+
+.presentation img {
+  width: 25vw;
+}
+
+.presentation p {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.fiap_school {
+  max-width: 100%;
+  margin-bottom: 1.25vw;
+}
+
+.row-cards {
+  display: flex;
+  gap: 1.25vw;
+}
+
+.fiap {
+  width: 50%;
+}
+
+.certifications {
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: space-between;
+  border-radius: 0.6vw;
+  background-color: #f1efec;
+  color: black;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card li {
+  width: 3.5vw;
+  aspect-ratio: 1;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card li button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.card li button:focus {
+  outline: none;
+}
+
+.card li button img {
+  width: 80%;
+  aspect-ratio: 1;
+}
+
+.card li button img:hover {
+  width: 90%;
+  aspect-ratio: 1;
+  transition: 0.1s;
+}
+
+.card li img {
+  width: 65%;
+  aspect-ratio: 1;
+}
+
+.card li img:hover {
+  width: 75%;
+  aspect-ratio: 1;
+  transition: 0.1s;
+}
+
+.date_local {
+  display: flex;
+  gap: 3%;
+  font-size: 0.84vw;
+  font-weight: bold;
+}
+
+.row-cards .date_local {
+  display: flex;
+  gap: 6%;
+}
+
+.date_local img {
+  height: 1vw;
+  aspect-ratio: 1;
+}
+
+.date_local h4,
+.date_local p {
+  display: flex;
+  gap: 0.25vw;
+  align-items: center;
+}
+
+.card p {
+  margin: 0.75vw 0;
+}
+
+/* ----- Estilos de Education ----- */
+.figma {
+  background-color: #a259ff;
+}
+
+.html {
+  background-color: #ff5733;
+}
+
+.css {
+  background-color: #2965f1;
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.nodejs {
+  background-color: #83cd29;
+}
+
+.bootstrap {
+  background-color: #7952b3;
+}
+
+.mongodb {
+  background-color: #4db33d;
+}
+
+.firebase {
+  background-color: #ffa000;
+}
+
+.react {
+  background-color: #61dafb;
+}
+
+.tailwind {
+  background-color: #38b2ac;
+}
+
+.angular {
+  background-color: #dd0031;
+}
+
+.typescript {
+  background-color: #3178c6;
+}
+
+.python {
+  background-color: #3776ab;
+}
+
+.java {
+  background-color: #007396;
+}
+
+.mysql {
+  background-color: #00758f;
+}
+
+.dotnet {
+  background-color: #512bd4;
+}
+/* ----- Estilos de Skills ----- */
+.alura {
+  background-color: #052f5f;
+}
+
+.conquer {
+  background-color: #ffff00;
+}
+
+/* ----- */
+.contact {
+  width: 100%;
+  display: flex;
+}
+
+.socials {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  font-size: 0.89vw;
+  color: black;
+}
+
+.socials img {
+  width: 8%;
+  aspect-ratio: 1;
+  border-radius: 10%;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
+  color: black;
+}
+/* ----- Estilo do Rodapé ----- */
+
+/* ----- Paleta de Cores ----- */
+.bg-primary {
+  background-color: #123458;
+}
+
+.bg-secondary {
+  background-color: #d4c9be;
+}
+
+.bg-tertiary {
+  background-color: #393939;
+}
+
+.bg-quarternary {
+  background-color: #f1efec;
+}
+
+/* ----- Tipografia ----- */
+.text-primary {
+  color: #123458;
+}
+
+.text-secondary {
+  color: #d4c9be;
+}
+
+.text-tertiary {
+  color: #393939;
+}
+
+.text-quaternary {
+  color: #f1efec;
+}
+
+/* ========== Estilos de ID ========== */
+
+/* ----- Sections ----- */
+#home {
+  padding: 4vw 12%;
+  justify-content: center;
+}
+#home p {
+  margin: 2.5% 1.3%;
+  width: 50%;
+  color: black;
+}
+#about {
+  padding: 2.25vw 12%;
+}
+#projects {
+  padding: 2.25vw 12%;
+}
+#skills {
+  padding: 2.25vw 12%;
+}
+#contacts {
+  padding: 2.25vw 12%;
+}
+
+#animation {
+  margin-top: 0.7vw;
+}
